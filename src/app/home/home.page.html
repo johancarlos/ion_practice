@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  {{titulo}}
+  <p>Contacto</p>
+  <p>
+      <b>Nombre:</b>{{contact.name}}
+  </p>
+  <p>
+      <b>Apellido:</b>{{contact.lastName}}
+  </p>
+ 
+   <!-- <ion-button [disabled]= "disabledButton ">Boton</ion-button>-->
+
+    <ion-input type="text" [(ngModel)]="contact.name"></ion-input>
+    <ion-input type="text" [(ngModel)]="contact.lastName"></ion-input>
+
+
+ <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+</ion-content>
